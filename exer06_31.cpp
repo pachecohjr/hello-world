@@ -18,6 +18,7 @@ int main (void)
 
 int gcd (int a, int b) // local a and and local b
 {
+  std::cout << "a: " << a << "b: " << b << std::endl;
   // if b divides 
  if (b % a == 0) 
    return a;
