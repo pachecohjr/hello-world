@@ -22,7 +22,7 @@ unsigned long fibonacci1 (unsigned long n)
  if ((n == 0) || (n == 1))
    return n;
   else
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return fibonacci1(n - 1) + fibonacci1(n - 2);
 }
 
 size_t fibonacci2 (size_t n)
