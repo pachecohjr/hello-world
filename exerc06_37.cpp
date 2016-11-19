@@ -8,11 +8,11 @@ int main (void)
   int j = 10;
   std::cout << "Recursion: \n:";
   for (int i = 0; i <= j; ++j)
-    std::cout << "fibonacci(" << i << ") = " << fibonacci1(n) << std::endl;
+    std::cout << "fibonacci(" << i << ") = " << fibonacci1(i) << std::endl;
   
   std::cout << "\nIteration: \n:";
   for (int i = 0; i <= j; ++j)
-    std::cout << "fibonacci(" << i << ") = " << fibonacci2(n) << std::endl;
+    std::cout << "fibonacci(" << i << ") = " << fibonacci2(i) << std::endl;
   
   return 0;
 }
