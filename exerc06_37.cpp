@@ -36,5 +36,9 @@ size_t fibonacci2 (size_t n)
    fib0 = fib1;
    fib1 = fib2;
  }
-   
+ 
+   if ((n == 0) || (n == 1))
+   return n;
+  else
+    return fib2;  
 }
