@@ -17,6 +17,6 @@ int reverse (int number)
 {
  int rem = number;
   while (rem > 0) {
-  std::cout << rem %= 10 <<;
+  std::cout << rem %= 10; <<
   rem /= 10; }
 }
