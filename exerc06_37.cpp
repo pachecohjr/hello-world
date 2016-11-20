@@ -12,7 +12,7 @@ int main (void)
     std::cout << "fibonacci(" << i << ") = " << fibonacci1(i) << std::endl;
   
   std::cout << "\nIteration: \n:";
-  for (int i = 0; i <= j; ++i)
+  for (int i = 2; i <= j; ++i)
     std::cout << "fibonacci(" << i << ") = " << fibonacci2(i) << std::endl;
   
   return 0;
@@ -28,10 +28,10 @@ unsigned long fibonacci1 (unsigned long n)
 
 size_t fibonacci2 (size_t n)
 {
-  int fib0 = 0;
-  int fib1 = 1;
-  int fib2;
- while (n > 0)
+  size_t fib0 = 0;
+  size_t fib1 = 1;
+  size_t fib2;
+ while (n > 1)
  {
    fib2 = fib0 + fib1;
    fib0 = fib1;
