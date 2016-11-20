@@ -1,24 +1,24 @@
 #include <iostream>
 
 // Could also override these functions by changing them to the same name, since they are of different types
-unsigned long fibonacci1 (unsigned long n);
-size_t        fibonacci2 (size_t n);
+unsigned long fibonacci (unsigned long n);
+size_t        fibonacci (size_t n);
 
 int main (void)
 {
   int j = 10;
   std::cout << "Recursion: \n:";
   for (int i = 0; i <= j; ++i)
-    std::cout << "fibonacci(" << i << ") = " << fibonacci1(i) << std::endl;
+    std::cout << "fibonacci(" << i << ") = " << fibonacci(i) << std::endl;
   
   std::cout << "\nIteration: \n:";
-  for (int i = 2; i <= j; ++i)
-    std::cout << "fibonacci(" << i << ") = " << fibonacci2(i) << std::endl;
+  for (size_t i = 2; i <= 10; ++i)
+    std::cout << "fibonacci(" << i << ") = " << fibonacci(i) << std::endl;
   
   return 0;
 }
 
-unsigned long fibonacci1 (unsigned long n)
+unsigned long fibonacci (unsigned long n)
 {
  if ((n == 0) || (n == 1))
    return n;
@@ -26,7 +26,7 @@ unsigned long fibonacci1 (unsigned long n)
     return fibonacci1(n - 1) + fibonacci1(n - 2);
 }
 
-size_t fibonacci2 (size_t n)
+size_t fibonacci (size_t n)
 {
   size_t fib0 = 0;
   size_t fib1 = 1;
