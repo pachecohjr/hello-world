@@ -1,6 +1,6 @@
 #include <iostream>
 
-// Could also override these functions by changing them to the same name, since they are of different types
+// Could also overload these functions by changing them to the same name, since they are of different types
 unsigned long fibonacci (unsigned long n);
 size_t        fibonacci (size_t n);
 
