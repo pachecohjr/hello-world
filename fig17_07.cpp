@@ -34,7 +34,7 @@ int main (void)
 } // end main
 
 // display single record from file
-void outputLine (int account, string name, double balance)
+void outputLine (int account, const string name, double balance)
 {
   std::cout << left << std::setw(10) << account << std::setw(13)
   << name << std::setw(7) << std::setprecision(2) << std::right << balance << std::endl;
