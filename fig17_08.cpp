@@ -108,5 +108,6 @@ bool shouldDisplay (int type, double balance)
 // display single record from file
 void outputLine (int account, const string name, double balance)
 {
-  
+   std::cout << left << std::setw(10) << account << std::setw(13)
+  << name << std::setw(7) << std::setprecision(2) << std::right << balance << std::endl; 
 } // end function outputLine
