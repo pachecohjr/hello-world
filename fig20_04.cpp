@@ -16,6 +16,6 @@ class ListNode
   ListNode (const NODETYPE &); // constructor
   NODETYPE getData() const; // return data in node
   private:
-  NODETYPE data; // data
-  ListNode<NODETYPE> *nextPtr; // next node in list  
+  NODETYPE data_; // data
+  ListNode<NODETYPE> *nextPtr_; // next node in list  
 }; // end class ListNode
