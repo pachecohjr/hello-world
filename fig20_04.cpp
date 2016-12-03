@@ -19,3 +19,12 @@ class ListNode
   NODETYPE data_; // data
   ListNode<NODETYPE> *nextPtr_; // next node in list  
 }; // end class ListNode
+
+// return copy of data in node
+template<typename NODETYPE>
+NODETYPE ListNode<NODETYPE>::getData() const
+{
+return data_; 
+} // end function getData()
+
+#endif
